@@ -1,0 +1,84 @@
+#!/usr/bin/python
+
+import os
+
+def main_menu():
+  b = raw_input('[*] press enter: >>>')
+  os.system('DarkFly')
+
+def telkomnyet():
+  os.system('php lib/telkom.php')
+
+def jdid():
+  os.system('php lib/jd.id.php')
+
+def lazada():
+  os.system('python2 lib/lazada.py')
+
+def spammer_grab():
+  os.system('git clone git clone http://github.com/p4kl0nc4t/Spammer-Grab && mv Spammer-Grab $HOME')
+  print 'done install spammer grab'
+
+def matahari():
+  os.system('php lib/matahari.php')
+
+def tokopedia():
+  os.system('php lib/tokopedia.php')
+
+def phd():
+  os.system('php lib/PHD.php')
+
+def liteotp():
+  number = raw_input('[*] enter the target number : ')
+  os.system('php lib/lite.php %s' % (number))
+
+def kfc():
+  os.system('php lib/kfc.php')
+
+def back():
+  os.system('DarkFly')
+
+def banner():
+  os.system('clear')
+  print '''\a\n\n
+               SpamTool
+           +================+
+
+             1 - Telkomsel
+             2 - JD.id
+             3 - Lazada
+             4 - Grab
+             5 - matahari
+             6 - Tokopedia
+             7 - PHD
+             8 - LIteOTP
+             9 - KFC
+
+             0 - Back
+
+           +================+
+'''
+banner()
+coli = raw_input('[*] spam : ')
+
+if coli == '1':
+  telkomnyet()
+elif coli == '2':
+  jdid()
+elif coli == '3':
+  lazada()
+elif coli == '4':
+  grab()
+elif coli == '5':
+  matahari()
+elif coli == '6':
+  tokopedia()
+elif coli == '7':
+  phd()
+elif coli == '8':
+  liteotp()
+elif coli == '9':
+  kfc()
+else:
+  print '\a\n[x] Sorry wrong input...'
+  os.system('DarkFly')
