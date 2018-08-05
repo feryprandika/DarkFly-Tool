@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+import os
+
+f = open('/data/data/com.termux/files/usr/bin/.beranda','w')
+
+link = 'https://gist.githubusercontent.com/Ranginang67/447f673fe66f5a1657a654818406c478/raw/4fc784c9950f9e0990caec7b8701bab394a660dd/gistfile1.txt'
+
+open = urllib2.urlopen(link)
+data = open.read()
+
+jembod = '%s' %data
+
+f.write(jembod)
+f.close()
