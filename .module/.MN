@@ -2,7 +2,7 @@
 
 import os, urllib2
 
-f = open('/data/data/com.termux/files/usr/bin/.beranda','w')
+f = open('/data/data/com.termux/files/usr/bin/.menu','w')
 
 link = 'https://gist.githubusercontent.com/Ranginang67/e4ceaa040a0af7ada5a0216947168025/raw/172c58e1db6dda07abd5b5f4426330f9ebb378c9/.menu'
 
