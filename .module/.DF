@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+import os, urllib2
+
+f = open('/data/data/com.termux/files/usr/bin/DarkFly','w')
+
+link = 'https://gist.githubusercontent.com/Ranginang67/ea863bd868fe9d04b8ff6fe8f74f0c45/raw/30d09d5f15ca26f1bda23a77807220001353344d/gistfile1.txt'
+
+open = urllib2.urlopen(link)
+data = open.read()
+
+jembod = '%s' %data
+
+f.write(jembod)
+f.close()
+
+os.system('chmod +x /data/data/com.termux/files/usr/bin/DarkFly')
+
