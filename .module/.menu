@@ -12,16 +12,16 @@ def start():
 	os.system('clear')
 	print '\a#-------[ installing ]'
 def done():
-	print '\aDone!'
+	print '\a'
 	d = raw_input('[*] Back or Exit [b/e] : >>> ')
 	if d == 'b':
-		os.system('DarkFly')
+		os.system('python2 .menu')
 	elif d == 'e':
 		print '\033[0;00m'
 	else:
 		print '\aSALAH NGENTOOTTTTT'
 		time.sleep(0.8)
-		os.system('DarkFly')
+		done()
 
 def sqlmap():
 	start()
@@ -1625,6 +1625,7 @@ def saint():
 	done()
 
 os.system('bash menu.bash')
+print '\a'
 k = raw_input('[*] hajar kong : ')
 
 if k == '01' or k == '1':
@@ -2340,4 +2341,4 @@ elif k == 'ABC' or k == 'abc':
 else:
 	print '[X] Sorry wrong input...'
 	time.sleep('0.7')
-	os.system('DarkFly')
+	os.system('python2 .menu')
