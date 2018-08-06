@@ -10,7 +10,7 @@ print '\ainstalling...'
 time.sleep(0.9)
 os.system('%s' % (lucu))
 os.system('apt-get install hydra -y')
-os.system('% && apt-get install php -y' % (lucu))
+os.system('%s && apt-get install php -y' % (lucu))
 os.system('mv .module/.hydra $cd %s' % (bin))
 os.system('mv .module/readme.txt $cd %s' % (bin))
 os.system('mv .module/.menu $cd %s' % (bin))
