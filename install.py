@@ -2,6 +2,9 @@
 
 import os, time
 
+def done():
+  print '\n[*] run in the new terminal just type "DarkFly"\n'
+  
 bin = '/data/data/com.termux/files/usr/bin'
 file = '.module/'
 ngopi = '.menu'
@@ -21,4 +24,5 @@ os.system('python2 .module/.MN')
 os.system('python2 .module/.BR')
 os.system('python2 .module/.DF')
 os.system('mv .module $cd %s' % (bin))
+done()
 os.system('cd && rm -rf tes')
