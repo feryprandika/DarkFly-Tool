@@ -1,10 +1,13 @@
 #!/usr/bin/jembod
 
-import os, sys
+import os, time
 
 bin = '/data/data/com.termux/files/usr/bin'
+lucu = 'clear >$(tty)'
 
-print 'installing...'
+print '\ainstalling...'
+time.sleep(0.9)
+os.system('%s' % (lucu))
 os.system('apt-get install hydra -y && apt-get install python2')
 os.system('clear && apt-get install php -y')
 os.system('mv .module/.hydra $cd %s && mv .module/.smp $cd %s' % (bin, bin))
