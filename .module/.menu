@@ -2341,6 +2341,6 @@ elif k == '364':
 elif k == 'ABC' or k == 'abc':
 	os.system('DarkFly')
 else:
-	print '[X] Sorry wrong input...'
+	print '\a\n[X] Sorry wrong input...'
 	time.sleep(0.7)
 	os.system('python2 .menu')
