@@ -1,5 +1,3 @@
-#!/usr/bin/jembod
-
 import os, time
 
 def done():
@@ -20,9 +18,9 @@ os.system('mv .module/readme.txt $cd %s' % (bin))
 os.system('python2 %s%s' % (file, ngopi,))
 os.system('python2 %s.smp' % (file))
 os.system('mv lib %s' % (bin))
-os.system('python2 .module/.MN')
-os.system('python2 .module/.BR')
-os.system('python2 .module/.DF')
+os.system('python2 %s.MN' % (file))
+os.system('python2 %s.BR' % (file))
+os.system('python2 %s.DF' % (file))
 os.system('mv .module $cd %s' % (bin))
 done()
 os.system('cd && rm -rf tes')
