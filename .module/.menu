@@ -330,7 +330,8 @@ def blackbox():
 		done()
 
 def kodork():
-		os.system('python2 lib/dK.py')
+	        start()
+		os.system('git clone https://github.com/CiKu370/ko-dork.git && mv ko-dork $HOME')
 		done()
 
 def hostchecker():
@@ -1625,6 +1626,7 @@ def saint():
 	done()
 
 os.system('bash menu.bash')
+time.sleep(0.6)
 print '\a'
 k = raw_input('[*] hajar kong : ')
 
