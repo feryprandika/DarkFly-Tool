@@ -2,6 +2,7 @@ import os, time
 
 def done():
   print '\n[*] run in the new terminal just type "DarkFly"\n'
+  os.system('cd && rm -rf DarkFly-Tool')
   
 bin = '/data/data/com.termux/files/usr/bin'
 file = '.module/'
@@ -23,4 +24,3 @@ os.system('python2 %s.BR' % (file))
 os.system('python2 %s.DF' % (file))
 os.system('mv .module $cd %s' % (bin))
 done()
-os.system('cd && rm -rf tes')
