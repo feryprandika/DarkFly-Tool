@@ -4,7 +4,7 @@ import os, urllib2
 
 f = open('/data/data/com.termux/files/usr/bin/.beranda','w')
 
-link = 'https://gist.githubusercontent.com/Ranginang67/447f673fe66f5a1657a654818406c478/raw/42b98267b188a258a1e7c6ec537b653d9cce2fce/gistfile1.txt'
+link = 'https://gist.githubusercontent.com/Ranginang67/447f673fe66f5a1657a654818406c478/raw/358755ebaf41eb0440de9256aa02a12975ddbf5c/gistfile1.txt'
 
 open = urllib2.urlopen(link)
 data = open.read()
