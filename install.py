@@ -1,9 +1,9 @@
 import os, time
 
 def done():
-  print '\n[*] run in the new terminal just type "DarkFly"\n'
-  os.system('cd && rm -rf DarkFly-Tool')
-  
+print '\n[*] run in the new terminal just type "DarkFly"\n'
+os.system('cd && rm -rf DarkFly-Tool')
+
 bin = '/data/data/com.termux/files/usr/bin'
 file = '.module/'
 ngopi = '.menu'
