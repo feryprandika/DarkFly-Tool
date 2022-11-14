@@ -1,4 +1,4 @@
-<?php
+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<?php
 function telkbomb($no, $jum, $wait){
     $x = 0; 
     while($x < $jum) {
